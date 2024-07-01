@@ -13,7 +13,28 @@
     />
   </head>
   <body>
-   
+    <div class="container">
+      <h1>Todo List</h1>
+      <div class="new-task">
+          <input type="text" id="new-task-input" placeholder="Nueva tarea">
+          <button id="add-task-button">Agregar</button>
+      </div>
+      <p>Total: <span id="total-tasks">0</span></p>
+      <p>Realizadas: <span id="completed-tasks">0</span></p>
+      <table>
+          <thead>
+              <tr>
+                  <th>ID</th>
+                  <th>Tarea</th>
+                  <th>Realizada</th>
+                  <th>Eliminar</th>
+              </tr>
+          </thead>
+          <tbody id="task-list">
+              <!-- Aquí se añadirán las tareas dinámicamente -->
+          </tbody>
+      </table>
+  </div>
     <!-- Font awesome -->
     <script src="https://kit.fontawesome.com/f5bdbb41e0.js" crossorigin="anonymous"></script>
     <!-- Bootstrap JS -->
